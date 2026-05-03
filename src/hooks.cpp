@@ -17,7 +17,7 @@ HRESULT STDMETHODCALLTYPE hkPresent(IDirect3DDevice9* dev,
     static bool init = false;
     if (!init) {
         OutputDebugStringA("[waw_menu] Initializing ImGui...");
-        HWND wnd_handle = FindWindowA("Call of Duty\xAE", nullptr);
+        HWND wnd_handle = FindWindowA("Call of Duty(TM) World at War", nullptr);
         if (!wnd_handle) wnd_handle = FindWindowA(nullptr, "Call of Duty\xAE");
         
         ImGui::CreateContext();
